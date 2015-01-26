@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.pccoe.idis.activity.WaterLevelActivity"
+    android:background="@android:color/holo_blue_light">
+
+    <edu.pccoe.idis.utils.CircleProgress
+        android:id="@+id/circle_progress"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        custom:circle_progress="20"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="@dimen/sis_btn_height"
+        android:background="@android:color/holo_blue_light"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:clickable="true"
+        android:enabled="true"
+
+        android:text="REFRESH"
+        android:id="@+id/refresh_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.pccoe.idis" >
+
+    <!-- To auto-complete the email text field in the login form with the user's emails
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.IDISActivity"
+            android:label="@string/title_activity_idis" >
+        </activity>
+        <activity
+            android:name=".activity.SensorStatusActivity"
+            android:label="@string/title_activity_sensor_status"
+            android:parentActivityName=".activity.IDISActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.IDISActivity" />
+        </activity>
+        <activity
+            android:name=".activity.WaterLevelActivity"
+            android:label="@string/title_activity_water_level"
+            android:parentActivityName=".activity.IDISActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.IDISActivity" />
+        </activity>
+    </application>
+
+</manifest>
