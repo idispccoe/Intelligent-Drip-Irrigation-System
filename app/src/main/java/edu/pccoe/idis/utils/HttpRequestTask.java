@@ -11,7 +11,7 @@ public class HttpRequestTask extends AsyncTask<String, Object, ServerResponse> {
     @Override
     protected ServerResponse doInBackground(String... params) {
         try {
-            final String url = "http://192.168.1.4:8080/"+params[0];
+            final String url = "http://192.168.53.1:8080/"+params[0];
             restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
             ServerResponse response = restTemplate.getForObject(url, ServerResponse.class);
             return response;

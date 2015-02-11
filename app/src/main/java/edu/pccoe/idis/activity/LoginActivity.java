@@ -261,7 +261,7 @@ public class LoginActivity extends Activity{
         protected Boolean doInBackground(Void... params) {
 
             HttpClient httpclient = new DefaultHttpClient();
-            String url = "http://192.168.1.4:8080/login";
+            String url = "http://192.168.53.1:8080/login";
             String username = mEmail;
             String password = mPassword;
             HttpPost httppost = new HttpPost(url);
