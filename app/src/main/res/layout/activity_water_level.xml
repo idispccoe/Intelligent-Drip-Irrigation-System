@@ -13,7 +13,7 @@
         android:id="@+id/circle_progress"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        custom:circle_progress="20"
+        custom:circle_progress="0"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
